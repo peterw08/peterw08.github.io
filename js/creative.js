@@ -56,7 +56,7 @@
   $('input[name=url]').on('keyup', function(e){
     var hash = ($(this).val().match(/https:\/\/docs\.google\.com\/document\/d\/(.+)\/pub/) || $(this).val().match(/http:\/\/peterw08.github\.io\/(.+)/) || [])[1];
     if (hash) {
-      $(this).val('http://peterw08.github/'+hash);
+      $(this).val('http://peterw08.github.io/'+hash);
       $(this).select();
       $('.docview').addClass('unrolled').find('a').attr('href', '/'+hash);
       $('.wrongurl').removeClass('unrolled');
