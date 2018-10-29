@@ -54,7 +54,7 @@
   $('input[name=url]').focus();
 
   $('input[name=url]').on('keyup', function(e){
-    var hash = ($(this).val().match(/https:\/\/docs\.google\.com\/document\/d\/(.+)\/pub/) || $(this).val().match(/http:\/\/peterw08.github\.io\/(.+)/) || [])[1];
+    var hash = ($(this).val().match(/https:\/\/docs\.google\.com\/document\/d\/(.+)\/pub/) || $(this).val().match(/http:\/\/gdoc\.pub\/(.+)/) || [])[1];
     if (hash) {
  	$(this).val('http://gdoc.pub/'+hash);
       $(this).select();
